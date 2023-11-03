@@ -1,0 +1,151 @@
+import java.util.Scanner;
+class Kumar {
+		public static void main(String[] args) {
+
+			//Assignment Operators
+			
+			int a = 12, b = 5;  // create variables and declare variables
+			int var;
+			
+			// assign value using =
+			var = a;
+			System.out.println("var using =: " + var);
+
+			// assign value using =+
+			var += a;
+			System.out.println("var using +=: " + var);
+
+			// assign value using =*
+			var *= a;
+			System.out.println("var using *=: " + var);
+
+
+			//Arithmetic Operators
+			
+			// addition operator
+			System.out.println("a + b = " + (a + b));
+
+			// subtraction operator
+			System.out.println("a - b = " + (a - b));
+
+			// multiplication operator
+			System.out.println("a * b = " + (a * b));
+
+			// division operator
+			System.out.println("a / b = " + (a / b));
+
+			// modulo operator
+			System.out.println("a % b = " + (a % b));
+
+			// value of a and b
+			System.out.println("a is " + a + " and b is " + b);
+
+			
+			//Relational Operators
+			
+			// == operator
+			System.out.println(a == b);  // false
+
+			// != operator
+			System.out.println(a != b);  // true
+
+			// > operator
+			System.out.println(a > b);  // false
+
+			// < operator
+			System.out.println(a < b);  // true
+
+			// >= operator
+			System.out.println(a >= b);  // false
+
+			// <= operator
+			System.out.println(a <= b);  // true
+
+			
+			//Logical Operators
+			
+	        // && operator
+			System.out.println((5 > 3) && (8 > 5));  // true
+			System.out.println((5 > 3) && (8 < 5));  // false
+
+			// || operator
+			System.out.println((5 < 3) || (8 > 5));  // true
+			System.out.println((5 > 3) || (8 < 5));  // true
+			System.out.println((5 < 3) || (8 < 5));  // false
+
+			// ! operator
+			System.out.println(!(5 == 3));  // true
+			System.out.println(!(5 > 3));  // false
+
+
+	//Unary Operator
+
+	System.out.println(a++ + ++a);
+	System.out.println(b++ + b++);
+  
+	boolean c=true;  
+	boolean d=false;  
+	System.out.println(~a);
+	System.out.println(~b);
+	System.out.println(!c);//false (opposite of boolean value)  
+	System.out.println(!d);//true
+
+	//Left shift Operator
+	System.out.println(10<<2);//10*2^2=10*4=40  
+	System.out.println(10<<3);//10*2^3=10*8=80  
+	System.out.println(20<<2);//20*2^2=20*4=80  
+	System.out.println(15<<4);//15*2^4=15*16=240
+
+	//Right shift Operator
+	System.out.println(10>>2);//10/2^2=10/4=2  
+	System.out.println(20>>2);//20/2^2=20/4=5  
+	System.out.println(20>>3);//20/2^3=20/8=2
+
+		//For positive number, >> and >>> works same  
+	    System.out.println(20>>2);  
+	    System.out.println(20>>>2);  
+	    //For negative number, >>> changes parity bit (MSB) to 0  
+	    System.out.println(-20>>2);  
+	    System.out.println(-20>>>2);
+
+		//Increment & Decrement Operators
+			int result1, result2;
+
+			// original value
+			System.out.println("Value of a: " + a);
+
+			// increment operator
+			result1 = ++a;
+			System.out.println("After increment: " + result1);
+
+			System.out.println("Value of b: " + b);
+
+			// decrement operator
+			result2 = --b;
+			System.out.println("After decrement: " + result2);
+
+
+	     
+			//InstanceOf Operators
+			
+			String str = "Kumar";
+			boolean result;
+
+			// checks if str is an instance of
+			// the String class
+			result = str instanceof String;
+			System.out.println("Is str an object of String? " + result);
+
+			
+			//Ternary Operators
+			
+			int februaryDays = 29;
+			String Days;
+
+			// ternary operator
+			Days = (februaryDays == 28) ? "Not a leap year" : "Leap year";
+			System.out.println(Days);
+
+		}
+	}
+

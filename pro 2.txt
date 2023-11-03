@@ -1,0 +1,25 @@
+﻿// Java program to find the difference between sum of the squares of the first 
+// n natural numbers and square of sum of first n natural number.
+	 
+class SumOfSquares {
+	 static int Square_Diff(int n){
+	 int A, B, C;
+	 // Sum of the squares of the first n natural numbers is
+     A = (n * (n + 1) * (2 * n + 1)) / 6;
+
+	 // Sum of n naturals numbers
+     B = (n * (n + 1)) / 2;
+	 
+	 // Square of B
+	 B = B * B;
+
+	 // Differences between A and B
+	 C = Math.abs(A - B);
+     return C;
+	}
+	 public static void main(String args[])
+	 {  int n = 50;
+	    System.out.println(Square_Diff(n));      
+	}
+	}
+
